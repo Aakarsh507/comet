@@ -4,6 +4,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+    background-color: darkblue;
   }
   
   a {
@@ -15,16 +16,64 @@ body {
     color: #37b3ed;
     text-decoration: none;
   }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
   
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
   }
+
 
 /*--------------------------------------------------------------
 # Colleges
 --------------------------------------------------------------*/
 .title h1{
     text-align: center;
-    
-    
+    color:white;
+    padding-top: 2%;
+    font-size: 72px;
 }
+
+.colleges-main{
+    width:100%;
+    height: auto;
+    font-size: 18px;
+    flex-basis: 100%;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .colleges1, .colleges2, .colleges3, .colleges4, .colleges5, .colleges6 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-basis: 100%;
+    font-style: italic; 
+    background-color: darkblue;
+    border: 10px solid #fff;
+    margin-bottom: 1%;
+  }
+  .colleges1 img, .colleges2 img, .colleges3 img, .colleges4 img, .colleges5 img, .colleges6 img{
+
+    height: auto;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+    .colleges1, .colleges2, .colleges3, .colleges4, .colleges5, .colleges6 {
+      flex-basis: 31.3%;
+    }
+  }

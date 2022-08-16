@@ -47,7 +47,7 @@ body {
     justify-content: space-between;
   }
   
-  .colleges1, .colleges2, .colleges3, .colleges4, .colleges5, .colleges6 {
+  .colleges1 , .colleges2 , .colleges3 , .colleges4 , .colleges5 , .colleges6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -57,6 +57,12 @@ body {
     background-color: darkblue;
     border: 10px solid #fff;
     margin-bottom: 1%;
+  }
+
+  .colleges1 button, .colleges2 button, .colleges3 button, .colleges4 button, .colleges5 button, .colleges6 button{
+    background: none;
+    outline: none;
+    border: none;
   }
   .colleges1 img, .colleges2 img, .colleges3 img, .colleges4 img, .colleges5 img, .colleges6 img{
 
@@ -77,3 +83,90 @@ body {
       flex-basis: 31.3%;
     }
   }
+
+/*--------------------------------------------------------------
+# Colleges-info
+--------------------------------------------------------------*/
+.main{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+#main {
+  margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+	.profile h1 {
+		text-align: center !important;
+	}
+}
+.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: skyblue;
+  overflow-y: auto;
+}
+
+.fixed img{
+  width: 100%;
+  height: auto;
+ padding-top: 5%;
+}
+.title-page h1{
+  font-size: 50px;
+  text-align: center;
+  color:white;
+ 
+}
+.title-page h2{
+  font-size: 30px;
+  color:white;
+
+ 
+}
+.sidebar {
+  color: navy;
+}
+
+.overview{
+  padding-top: 3%;
+}
+
+.nav-menu a, .nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: navy;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  font-size: 32px;
+}
+
+.nav-menu  ul{
+  list-style-type:square;
+  color: navy;
+}
+.main button{
+  background-color: darkblue;
+  outline: darkblue;
+}

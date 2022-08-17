@@ -170,7 +170,7 @@ body {
 
 @media (max-width: 1199px) {
   #header {
-    left: -300px;
+   display: none;
   }
 
   #main {
@@ -182,3 +182,4 @@ body {
 		text-align: center !important;
 	}
 }
+

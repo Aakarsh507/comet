@@ -91,26 +91,12 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 5%;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 #main {
   margin-left: 300px;
 }
 
-@media (max-width: 1199px) {
-  #header {
-    left: -300px;
-  }
-
-  #main {
-    margin-left: 0;
-  }
-}
-@media (max-width: 900px) {
-	.profile h1 {
-		text-align: center !important;
-	}
-}
 .fixed{
   position: fixed;
   top: 0;
@@ -118,7 +104,6 @@ body {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
   background: skyblue;
@@ -128,7 +113,7 @@ body {
 .fixed img{
   width: 100%;
   height: auto;
- padding-top: 5%;
+  padding-top: 5%;
 }
 .title-page h1{
   font-size: 50px;
@@ -152,21 +137,40 @@ body {
 
 .nav-menu a, .nav-menu a:focus {
   display: flex;
-  align-items: center;
   color: navy;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
   font-size: 32px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
 }
 
-.nav-menu  ul{
+.nav-menu  ul {
   list-style-type:square;
   color: navy;
 }
 .main button{
   background-color: darkblue;
-  outline: darkblue;
+  border: none;
+  font-size: 25px;
+
+
+}
+
+@media (max-width: 1199px) {
+  #header {
+    left: -300px;
+  }
+
+  #main {
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+	.profile h1 {
+		text-align: center !important;
+	}
 }
